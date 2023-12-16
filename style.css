@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-blue-input: #387e96;
+  --color-white: #ffffff;
+  --color-blue-header: #065e7c;
+}
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+.container {
+  padding: 1.2rem auto;
+  width: min(500rem, 100%);
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.6rem 2.8rem;
+  margin: 0 auto;
+  background-color: var(--color-blue-header);
+
+  display: flex;
+  gap: 2.4rem;
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  border: 0;
+  color: white;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  width: 100%;
+  border-radius: 0.4rem;
+
+  background-color: var(--color-blue-input);
+}
+
+.input-wrapper input::placeholder {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+.catheader {
+  width: 100%;
+
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+main {
+  background-color: var(--color-white);
+}
+
+main .titulo1 {
+  font-size: 2.4rem;
+  margin: 3.1rem 2.2rem 0 2.2rem;
+  font-weight: 700;
+}
+
+main .avaliacao {
+  display: flex;
+  margin: 0.8rem 0 0 2.2rem;
+  gap: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+main .texto {
+  font-size: 1.6rem;
+  margin: 3.1rem 2.6rem 0 2.2rem;
+  font-weight: 400;
+}
+
+main .titulo2 {
+  font-size: 2.4rem;
+  margin: 3.4rem 0 0 2.2rem;
+  font-weight: 700;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 1.6rem;
+  margin: 3.2rem 2.6rem 0 2.2rem;
+}
+
+.card1 {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 1.5rem;
+}
+
+.card img {
+  align-items: center;
+
+  width: min(19rem);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.txts h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.txts1 p {
+  font-size: 1.4rem;
+  margin-bottom: 3.9rem;
+  font-weight: 400;
+}
+
+footer {
+  padding: 1.6rem;
+  background-color: var(--color-blue-input);
+}
+
+footer h2 {
+  color: #fff;
+
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
