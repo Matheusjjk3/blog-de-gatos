@@ -123,7 +123,7 @@ main .titulo2 {
 .card img {
   align-items: center;
 
-  width: min(19rem);
+  width: min(15rem);
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 0.5rem;
