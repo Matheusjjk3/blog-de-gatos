@@ -10,6 +10,7 @@
   --color-blue-input: #387e96;
   --color-white: #ffffff;
   --color-blue-header: #065e7c;
+  --color-white-main-media: #f4fcff;
 }
 
 html,
@@ -23,18 +24,28 @@ body {
 }
 
 .container {
-  padding: 1.2rem auto;
   width: min(500rem, 100%);
   margin: 0 auto;
+}
+
+header .container {
+  align-items: center;
 }
 
 header {
   padding: 1.6rem 2.8rem;
   margin: 0 auto;
   background-color: var(--color-blue-header);
-
+  align-items: center;
   display: flex;
   gap: 2.4rem;
+  height: 7.2rem;
+}
+
+header .logo {
+  margin-top: 1.1rem;
+  width: 5rem;
+  height: 5rem;
 }
 
 header form {
@@ -72,7 +83,6 @@ header form {
 
 .catheader {
   width: 100%;
-
   aspect-ratio: 16/9;
   object-fit: cover;
 }
@@ -83,7 +93,7 @@ main {
 
 main .titulo1 {
   font-size: 2.4rem;
-  margin: 3.1rem 2.2rem 0 2.2rem;
+  margin: 3.2rem 0 0 2.2rem;
   font-weight: 700;
 }
 
@@ -101,9 +111,9 @@ main .texto {
   font-weight: 400;
 }
 
-main .titulo2 {
+.sidebar .titulo2 {
   font-size: 2.4rem;
-  margin: 3.4rem 0 0 2.2rem;
+  margin: 3.8rem 0 0 2.2rem;
   font-weight: 700;
 }
 
@@ -121,12 +131,11 @@ main .titulo2 {
 }
 
 .card img {
-  align-items: center;
-
   width: min(15rem);
   aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 .txts h1 {
@@ -140,6 +149,10 @@ main .titulo2 {
   font-weight: 400;
 }
 
+#moacir{
+  border-bottom: 3.9rem;
+}
+
 footer {
   padding: 1.6rem;
   background-color: var(--color-blue-input);
@@ -151,4 +164,61 @@ footer h2 {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  #app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+  }
+  header {
+    padding: 1.2rem 11.2rem;
+  }
+
+  .catheader {
+    margin-top: 4.4rem;
+    width: min(77rem);
+    border-radius: 0.5rem;
+    margin-left: 10.9rem;
+    aspect-ratio: 17/9;
+  }
+
+  body {
+    background-color: var(--color-white-main-media);
+  }
+
+  main {
+    margin: 3.1rem 3.4rem 3.9rem 11.2rem;
+    background-color: var(--color-white-main-media);
+  }
+
+  main .texto {
+    margin: 0rem 3.4rem 3.9rem 11.2rem;
+    width: max(77rem);
+  }
+
+  main .titulo1 {
+    margin: 3.2rem 33rem 3.2rem 11.2rem;
+    font-size: 2.4rem;
+  }
+
+  main .flexa {
+    display: flex;
+    align-items: center;
+  }
+
+  main .avaliacao {
+    margin: 0;
+  }
+
+  .gridesk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidebar {
+    margin-right: 11.2rem;
+  }
+
+  
 }
